@@ -1,0 +1,13 @@
+class Solution(object):
+    def maxProfit(self, prices):
+        ans =0
+        minvalue = prices[0]
+        for i in range (len(prices)):
+            if (prices[i] < minvalue):
+                minvalue = prices[i]
+            profit = prices[i]- minvalue
+            if(ans< profit):
+                ans = profit
+
+        
+        return ans
