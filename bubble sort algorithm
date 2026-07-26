@@ -1,0 +1,9 @@
+#bubble sort algorithm 
+li = [20, 10, 40, 50, 25, 15]
+n = len(li)
+for i in range(n):
+    for j in range (n-i-1):
+        if li[j]> li[j+1]:
+            li[j], li[j+1] = li[j+1] , li[j]
+            
+print(li)
